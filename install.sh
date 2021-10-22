@@ -39,10 +39,10 @@ cd ${WORKSPACE}/artifacts
 
 if [[ $DISTRO = 'xenial' ]]; then
 fpm -s dir -t deb \
-   -n protobuf-six-river --version ${VERSION} /usr/local/bin=/usr/local/bin
+   -n protobuf-six-river --version ${VERSION} /usr/local/=/usr/local/bin
 else
 fpm -s dir -t deb \
-   -n protobuf-six-river --version ${VERSION} /usr/local/bin=/usr/local/bin
+   -n protobuf-six-river --version ${VERSION} /usr/local/=/usr/local/bin
 fi
 ls -la
 pwd
