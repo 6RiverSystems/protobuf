@@ -42,7 +42,7 @@ fpm -s dir -t deb \
    -n protobuf-six-river --version ${VERSION} /usr/local/=/usr/local
 else
 fpm -s dir -t deb \
-   -n protobuf-six-river --version ${VERSION} /usr/local=/usr/local
+   -n protobuf-six-river --version ${VERSION} /usr/local/=/usr/local
 fi
 ls -la
 pwd
